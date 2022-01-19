@@ -5,8 +5,8 @@
 *
 */
 
-import Exeptions.MyArrayDataException;
-import Exeptions.MyArraySizeException;
+import Exception.MyArrayDataException;
+import Exception.MyArraySizeException;
 
 import java.util.Arrays;
 
@@ -29,7 +29,7 @@ public class JavaCore2 {
 
         
         public static int array(String[][] stringMatrix) throws MyArrayDataException, MyArraySizeException {
-        if (stringMatrix.length != 4 || stringMatrix[0].length != 4) {
+        if (stringMatrix.length != 3 || stringMatrix[0].length != 3) {
             throw new MyArraySizeException("Error massive lenght");
         }
 

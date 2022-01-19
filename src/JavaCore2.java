@@ -30,7 +30,7 @@ public class JavaCore2 {
         
         public static int array(String[][] stringMatrix) throws MyArrayDataException, MyArraySizeException {
         if (stringMatrix.length != 4 || stringMatrix[0].length != 4) {
-            throw new MyArraySizeException("ошибка длины массива");
+            throw new MyArraySizeException("Error massive lenght");
         }
 
         int sum = 0;
@@ -39,7 +39,7 @@ public class JavaCore2 {
                   try {
                       sum += Integer.parseInt(stringMatrix[i][j]);
                   } catch (NumberFormatException e) {
-                      throw new MyArrayDataException(" Ошибка в строке " +(i+1) +" в столбце " +(j+1));
+                      throw new MyArrayDataException(" error " +(i+1) +" on column " +(j+1));
                   }
              }
           }
@@ -47,7 +47,4 @@ public class JavaCore2 {
       }
     }
 
-
-
-    }
 }

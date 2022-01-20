@@ -29,7 +29,7 @@ public class JavaCore2 {
 
         
         public static int array(String[][] stringMatrix) throws MyArrayDataException, MyArraySizeException {
-        if (stringMatrix.length != 3 || stringMatrix[0].length != 3) {
+        if (stringMatrix.length != 3 && stringMatrix[0].length != 3) {
             throw new MyArraySizeException("Error massive lenght");
         }
 
@@ -38,7 +38,7 @@ public class JavaCore2 {
               for (int j = 0; j < stringMatrix.length; j++){
                   try {
                       sum += Integer.parseInt(stringMatrix[i][j]);
-                  } catch (NumberFormatException e) {
+                  } catch (NumberFormatException m) {
                       throw new MyArrayDataException(" error " +(i+1) +" on column " +(j+1));
                   }
              }
